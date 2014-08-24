@@ -1,0 +1,25 @@
+********************************************************
+Installation guide
+********************************************************
+
+MiniFPM uses cmake to compile.
+1. Create a "bin" directory in the project main directory and change to it
+     mkdir dir
+     cd dir
+2. Call cmake with install directory prefix (in the "bin" directory)
+     cmake -DCMAKE_INSTALL_PREFIX=. ..
+3. Compile the source and install the binaries
+     make
+     make install
+
+The static library is installed to "lib", the examples to "examples".
+
+
+
+Dependencies:
+-------------
+To compile the source the following packages (development versions) are needed:
+    UMFPACK (or SuiteSparse)
+    LAPACK/BLAS
+There is also support for ADOL-C provided which can be used if the corresponding
+library is installed.

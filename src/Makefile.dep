@@ -1,0 +1,54 @@
+Array.o:
+Array.cpp Array.h
+bgGridIntegration.o:
+bgGridIntegration.cpp bgGridIntegration.h \
+scalarField.h Array.h pointSet.h points.h mfpmException.h \
+mfpmParameters.h writeDebugVTK.h
+bndIntegration.o:
+bndIntegration.cpp bndIntegration.h pointSet.h Array.h \
+points.h mfpmException.h mfpmParameters.h scalarField.h
+matrixIML.o:
+matrixIML.cpp matrixIML.h mfpmMatrix.h pointSet.h Array.h \
+points.h mfpmException.h mfpmParameters.h scalarField.h \
+primitive_operators.h matrixUmfpack.h
+matrixUmfpack.o:
+matrixUmfpack.cpp matrixUmfpack.h mfpmMatrix.h \
+pointSet.h Array.h points.h mfpmException.h mfpmParameters.h \
+scalarField.h primitive_operators.h
+mfpmException.o:
+mfpmException.cpp mfpmException.h
+mfpmMatrix.o:
+mfpmMatrix.cpp mfpmMatrix.h pointSet.h Array.h points.h \
+mfpmException.h mfpmParameters.h scalarField.h primitive_operators.h \
+matrixUmfpack.h
+mfpmParameters.o:
+mfpmParameters.cpp mfpmParameters.h
+operators.o:
+operators.cpp operators.h mfpmMatrix.h pointSet.h Array.h \
+points.h mfpmException.h mfpmParameters.h scalarField.h \
+primitive_operators.h matrixUmfpack.h vectorField.h
+optimisation.o:
+optimisation.cpp optimisation.h Array.h
+points.o:
+points.cpp points.h
+pointSet.o:
+pointSet.cpp pointSet.h Array.h points.h mfpmException.h \
+mfpmParameters.h scalarField.h primitive_operators.h
+postResult.o:
+postResult.cpp postResult.h scalarField.h Array.h \
+pointSet.h points.h mfpmException.h mfpmParameters.h vectorField.h
+primitive_operators.o:
+primitive_operators.cpp primitive_operators.h \
+pointSet.h Array.h points.h mfpmException.h mfpmParameters.h \
+scalarField.h
+refinement.o:
+refinement.cpp refinement.h scalarField.h Array.h \
+pointSet.h points.h mfpmException.h mfpmParameters.h
+scalarField.o:
+scalarField.cpp scalarField.h Array.h pointSet.h points.h \
+mfpmException.h mfpmParameters.h primitive_operators.h
+vectorField.o:
+vectorField.cpp vectorField.h scalarField.h Array.h \
+pointSet.h points.h mfpmException.h mfpmParameters.h
+writeDebugVTK.o:
+writeDebugVTK.cpp writeDebugVTK.h
