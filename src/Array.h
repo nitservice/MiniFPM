@@ -33,13 +33,13 @@ using namespace std;
 class Array
 {
 private:
+	Array(double n);
 	vector<double> data;
 	int size;
 
 public:
 	Array();
 	Array(int n);
-	Array(double v);
 	Array(const Array& V);
 	Array(int n, double* data);
 	~Array();

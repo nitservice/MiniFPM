@@ -11,12 +11,6 @@ Array_AD::Array_AD(int n)
 	data.resize(n,0.0);
 }
 
-Array_AD::Array_AD(adouble& v)
-{
-	cout << "Warning: Array_AD constructor with adouble value! -> empty Array_AD has been created!" << endl;
-	size = 0;
-}
-
 Array_AD::Array_AD(const Array_AD& V)
 {
 	size = V.getSize();

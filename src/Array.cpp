@@ -8,11 +8,6 @@ Array::Array(int n)
 	data.resize(n,0.0);
 }
 
-Array::Array(double v)
-{
-	cout << "Warning: Array constructor with double value! -> empty Array has been created!" << endl;
-	size = 0;
-}
 
 Array::Array(const Array& V)
 {

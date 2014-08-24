@@ -34,13 +34,13 @@ using namespace std;
 class Array_AD
 {
 private:
+	Array_AD(adouble& v);
 	vector<adouble> data;
 	int size;
 
 public:
 	Array_AD();
 	Array_AD(int n);
-	Array_AD(adouble& v);
 	Array_AD(const Array_AD& V);
 	Array_AD(const Array& V);
 	Array_AD(int n, adouble* data);
