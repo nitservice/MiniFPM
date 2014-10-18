@@ -4,8 +4,8 @@ Installation guide
 
 MiniFPM uses cmake to compile.
 1. Create a "bin" directory in the project main directory and change to it
-     mkdir dir
-     cd dir
+     mkdir bin
+     cd bin
 2. Call cmake with install directory prefix (in the "bin" directory)
      cmake -DCMAKE_INSTALL_PREFIX=. ..
 3. Compile the source and install the binaries
